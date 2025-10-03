@@ -1,5 +1,4 @@
 use leptos::prelude::*;
-use crate::components::counter_btn::Button;
 
 #[component]
 pub fn Home() -> impl IntoView {
@@ -19,15 +18,6 @@ pub fn Home() -> impl IntoView {
                 </ul>
             }
         }>
-            <div class="navbar bg-base-200 shadow-lg">
-                <div class="avatar">
-                    <div class="flex-none rounded-full border-1 border-accent shadow-lg">
-                        <img src="images/lion.svg" alt="DuLion Logo" height="110" width="110" />
-                    </div>
-                </div>
-                <h1 class="flex-1 flex text-4xl justify-center">"DuLion Technology"</h1>
-                <p class="flex-none"><Button /></p>
-            </div>
             <div class="container mx-auto flex flex-wrap justify-center items-center gap-4 mt-4 items-start">
                 <div class="card card-border bg-base-100 w-2xl shadow-lg">
                     <div class="card-body">

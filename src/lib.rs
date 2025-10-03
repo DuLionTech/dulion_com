@@ -1,15 +1,16 @@
+use crate::components::avatar::Avatar;
+use crate::components::menu::{Horizontal, Dropdown};
+use crate::pages::projects::Projects;
+use crate::pages::resources::Resources;
 use leptos::prelude::*;
 use leptos_meta::*;
 use leptos_router::{components::*, path};
 
-// Modules
 mod components;
 mod pages;
 
-// Top-Level pages
 use crate::pages::home::Home;
 
-/// An app router which renders the homepage and handles 404's
 #[component]
 pub fn App() -> impl IntoView {
     provide_meta_context();
@@ -17,14 +18,21 @@ pub fn App() -> impl IntoView {
     view! {
         <Html attr:lang="en" attr:dir="ltr" attr:data-theme="light" />
         <Title text="Phillip DuLion - Technology Enthusiast" />
-
-        // injects metadata in the <head> of the page
         <Meta charset="UTF-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+        <div class="navbar bg-base-200 shadow-lg">
+            <Avatar />
+            <Dropdown />
+            <div class="flex-1 grid lg:justify-center gap-2">
+                <h1 class="text-5xl">"DuLion Technology"</h1>
+                <Horizontal />
+            </div>
+        </div>
         <Router>
             <Routes fallback=|| view! { NotFound }>
                 <Route path=path!("/") view=Home />
+                <Route path=path!("/projects") view=Projects />
+                <Route path=path!("/resources") view=Resources />
             </Routes>
         </Router>
     }
