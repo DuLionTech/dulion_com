@@ -46,6 +46,18 @@ pub fn Home() -> impl IntoView {
                         in the blogging section."</p>
                     </div>
                 </div>
+                <div class="card card-border bg-base-100 w-2xl shadow-lg">
+                    <div class="card-body">
+                        <h2 class="card-title">"Woodworking"</h2>
+                        <p>"This is another creative passion of mine. Over the years, I've \
+                        accumulated enough equipment to fill a small shop. As I've gotten deeper \
+                        into electronics, I've started looking for ideas for merging electronics \
+                        into my woodworking passion. One example is the birdhouses I've built for \
+                        my family with built-in wifi cameras. I'm also exploring addressable LED \
+                        lights, searching for ways of adding lights into my woodworking \
+                        projects."</p>
+                    </div>
+                </div>
             </div>
         </ErrorBoundary>
     }
