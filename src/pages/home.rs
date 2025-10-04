@@ -18,7 +18,7 @@ pub fn Home() -> impl IntoView {
                 </ul>
             }
         }>
-            <div class="container mx-auto flex flex-wrap justify-center items-center gap-4 mt-4 items-start">
+            <div class="container mx-auto flex flex-wrap justify-center items-center gap-4 items-start">
                 <div class="card card-border bg-base-100 w-2xl shadow-lg">
                     <div class="card-body">
                         <h2 class="card-title">"Software Technology"</h2>
@@ -29,7 +29,7 @@ pub fn Home() -> impl IntoView {
                         design, development, open source, and networking technologies. My primary \
                         expertise has been in building scalable enterprise integration solutions, \
                         distributed services, and web-based application architectures using various \
-                        open-source technologies. I have a reputation for getting projects launched \
+                        open-source technologies. I have a reputation for getting markdown launched \
                         from conception, researching and evolving practical designs, quickly \
                         adopting new technologies, and delivering solid, reliable, maintainable, \
                         scalable solutions."</p>
@@ -42,7 +42,7 @@ pub fn Home() -> impl IntoView {
                         interesting solutions. As small and embedded electronics have become \
                         more accessible, I've studied and experimented whatever I could get my \
                         hands on. As a result, I've accumulated a significant stash of gadgets and \
-                        a staggering number of projects. I plan to write about my various projects \
+                        a staggering number of markdown. I plan to write about my various markdown \
                         in the blogging section."</p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ pub fn Home() -> impl IntoView {
                         into my woodworking passion. One example is the birdhouses I've built for \
                         my family with built-in wifi cameras. I'm also exploring addressable LED \
                         lights, searching for ways of adding lights into my woodworking \
-                        projects."</p>
+                        markdown."</p>
                     </div>
                 </div>
             </div>

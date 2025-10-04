@@ -1,4 +1,5 @@
 use leptos::prelude::*;
+use crate::components::article::Article;
 
 #[component]
 pub fn Projects() -> impl IntoView {
@@ -18,7 +19,9 @@ pub fn Projects() -> impl IntoView {
                 </ul>
             }
         }>
-            <div>"Projects"</div>
+            <div class="container mx-auto flex flex-wrap justify-center items-center gap-4 items-start">
+                <Article />
+            </div>
         </ErrorBoundary>
     }
 }

@@ -8,6 +8,7 @@ use leptos_router::{components::*, path};
 
 mod components;
 mod pages;
+mod api;
 
 use crate::pages::home::Home;
 
@@ -20,7 +21,7 @@ pub fn App() -> impl IntoView {
         <Title text="Phillip DuLion - Technology Enthusiast" />
         <Meta charset="UTF-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <div class="navbar bg-base-200 shadow-lg">
+        <div class="navbar bg-base-200 shadow-lg mb-4">
             <Avatar />
             <Dropdown />
             <div class="flex-1 grid lg:justify-center gap-2">
@@ -31,7 +32,7 @@ pub fn App() -> impl IntoView {
         <Router>
             <Routes fallback=|| view! { NotFound }>
                 <Route path=path!("/") view=Home />
-                <Route path=path!("/projects") view=Projects />
+                <Route path=path!("/markdown") view=Projects />
                 <Route path=path!("/resources") view=Resources />
             </Routes>
         </Router>
