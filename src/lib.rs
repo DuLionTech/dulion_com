@@ -21,16 +21,16 @@ pub fn App() -> impl IntoView {
         <Title text="Phillip DuLion - Technology Enthusiast" />
         <Meta charset="UTF-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <div class="navbar bg-base-200 shadow-lg mb-4">
-            <Avatar />
-            <Dropdown />
-            <div class="flex-1 grid lg:justify-center gap-2">
-                <h1 class="text-5xl">"DuLion Technology"</h1>
-                <Horizontal />
-            </div>
-        </div>
         <Router>
-            <Routes fallback=|| view! { NotFound }>
+            <nav class="navbar bg-base-200 shadow-lg mb-4">
+                <Avatar />
+                <Dropdown />
+                <div class="flex-1 grid lg:justify-center gap-2">
+                    <h1 class="text-5xl">"DuLion Technology"</h1>
+                    <Horizontal />
+                </div>
+            </nav>
+            <Routes fallback=|| view! { Missing }>
                 <Route path=path!("/") view=Home />
                 <Route path=path!("/projects") view=Projects />
                 <Route path=path!("/resources") view=Resources />

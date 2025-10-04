@@ -17,6 +17,7 @@ serde = { version = "1.0.228", features = ["derive"] }
 send_wrapper = "0.6.0"
 gloo-net = { version = "0.6.0", features = ["http"] }
 web-sys = { version = "0.3", features = ["AbortController", "AbortSignal"] }
+markdown = "1.0.0"
 
 # utils
 # strum = { version = "0.25", features = ["derive", "strum_macros"] }

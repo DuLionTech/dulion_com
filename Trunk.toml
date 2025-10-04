@@ -44,7 +44,7 @@ port = 3000
 # Open a browser tab once the initial build is complete.
 open = false
 # Whether to disable fallback to index.html for missing files.
-# no_spa = false
+no_spa = true
 # Disable auto-reload of the web app.
 # no_autoreload = false
 # Disable error reporting
