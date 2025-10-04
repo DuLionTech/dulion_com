@@ -6,7 +6,7 @@ pub fn Horizontal() -> impl IntoView {
         <div class="justify-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
                 <li><a href="/">Home</a></li>
-                <li><a href="/markdown/">Projects</a></li>
+                <li><a href="/projects/">Projects</a></li>
                 <li><a href="/resources/">Resources</a></li>
             </ul>
         </div>
