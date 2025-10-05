@@ -4,6 +4,24 @@
 }
 @source "./src/**/*.{rs,html,css}";
 /* Fix to enable form input auto-focus */
+
+@layer base {
+    @font-face {
+        font-family: 'circuit'; /* Choose a descriptive name */
+        src: url('/fonts/circuit.ttf') format('truetype');
+        font-weight: normal; /* Define weight if applicable */
+        font-style: normal; /* Define style if applicable */
+        font-display: swap; /* Optional: improve font loading experience */
+    }
+    @font-face {
+        font-family: 'neospace'; /* Choose a descriptive name */
+        src: url('/fonts/neospace.ttf') format('truetype');
+        font-weight: normal; /* Define weight if applicable */
+        font-style: normal; /* Define style if applicable */
+        font-display: swap; /* Optional: improve font loading experience */
+    }
+}
+
 @layer utilities {
     .modal {
         transition:

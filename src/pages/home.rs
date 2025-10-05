@@ -19,8 +19,11 @@ pub fn Home() -> impl IntoView {
             }
         }>
             <div class="container mx-auto flex flex-wrap justify-center items-center gap-4 items-start">
-                <div class="card card-border bg-base-100 w-2xl shadow-lg">
-                    <div class="card-body">
+                <div class="card card-border card-side bg-base-100 w-xl shadow-lg">
+                    <figure class="w-1/3">
+                        <img src="images/soft_tech.jpg" alt="Software Technology" />
+                    </figure>
+                    <div class="card-body w-2/3">
                         <h2 class="card-title">"Software Technology"</h2>
                         <p>"My career has focused around building enterprise integration \
                         solutions, including roles handling architecture, software engineering, \
@@ -35,8 +38,13 @@ pub fn Home() -> impl IntoView {
                         scalable solutions."</p>
                     </div>
                 </div>
-                <div class="card card-border bg-base-100 w-2xl shadow-lg">
-                    <div class="card-body">
+                <div class="card card-border card-side bg-base-100 w-xl shadow-lg">
+                    <figure class="w-1/3">
+                        <img
+                            src="images/embedded.jpg"
+                            alt="Embedded Electronics" />
+                    </figure>
+                    <div class="card-body w-2/3">
                         <h2 class="card-title">"Embedded Electronics"</h2>
                         <p>"I've always had an extensive curiosity and passion for creating \
                         interesting solutions. As small and embedded electronics have become \
@@ -46,8 +54,13 @@ pub fn Home() -> impl IntoView {
                         in the blogging section."</p>
                     </div>
                 </div>
-                <div class="card card-border bg-base-100 w-2xl shadow-lg">
-                    <div class="card-body">
+                <div class="card card-border card-side bg-base-100 w-xl shadow-lg">
+                    <figure class="w-1/3">
+                        <img
+                            src="images/woodworking.jpg"
+                            alt="Woodworking" />
+                    </figure>
+                    <div class="card-body w-2/3">
                         <h2 class="card-title">"Woodworking"</h2>
                         <p>"This is another creative passion of mine. Over the years, I've \
                         accumulated enough equipment to fill a small shop. As I've gotten deeper \
