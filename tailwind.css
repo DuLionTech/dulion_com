@@ -7,9 +7,9 @@
 @layer utilities {
     .modal {
         transition:
-                translate 0.3s ease-out,
-                background-color 0.3s ease-out,
-                opacity 0.1s ease-out;
+            translate 0.3s ease-out,
+            background-color 0.3s ease-out,
+            opacity 0.1s ease-out;
         @starting-style {
             &.modal-open,
             &[open],
@@ -22,5 +22,14 @@
 @layer components {
     a[aria-current="page"] {
         @apply text-primary;
+    }
+    div.article h1 {
+        @apply card-title;
+    }
+    div.article ul {
+        @apply list-disc pl-5;
+    }
+    div.article p {
+        @apply pt-3;
     }
 }
