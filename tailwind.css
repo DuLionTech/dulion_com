@@ -20,6 +20,20 @@
         font-style: normal; /* Define style if applicable */
         font-display: swap; /* Optional: improve font loading experience */
     }
+    @font-face {
+        font-family: 'garetha'; /* Choose a descriptive name */
+        src: url('/fonts/garetha.ttf') format('truetype');
+        font-weight: normal; /* Define weight if applicable */
+        font-style: normal; /* Define style if applicable */
+        font-display: swap; /* Optional: improve font loading experience */
+    }
+    @font-face {
+        font-family: 'religions'; /* Choose a descriptive name */
+        src: url('/fonts/religions.ttf') format('truetype');
+        font-weight: normal; /* Define weight if applicable */
+        font-style: normal; /* Define style if applicable */
+        font-display: swap; /* Optional: improve font loading experience */
+    }
 }
 
 @layer utilities {

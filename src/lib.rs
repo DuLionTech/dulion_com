@@ -26,7 +26,7 @@ pub fn App() -> impl IntoView {
                 <Avatar />
                 <Dropdown />
                 <div class="flex-1 grid lg:justify-center">
-                    <h1 class="text-3xl lg:text-6xl font-[neospace]">"DuLion Technology"</h1>
+                    <h1 class="text-3xl lg:text-6xl font-[religions]">"DuLion Technology"</h1>
                     <Horizontal />
                 </div>
             </nav>
