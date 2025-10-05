@@ -1,13 +1,14 @@
 use leptos::prelude::*;
+use leptos_router::components::A;
 
 #[component]
 pub fn Horizontal() -> impl IntoView {
     view! {
         <div class="justify-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-                <li><a href="/">Home</a></li>
-                <li><a href="/projects/">Projects</a></li>
-                <li><a href="/resources/">Resources</a></li>
+                <li><A href="/">Home</A></li>
+                <li><A href="/projects/">Projects</A></li>
+                <li><A href="/resources/">Resources</A></li>
             </ul>
         </div>
       }
@@ -22,9 +23,9 @@ pub fn Dropdown() -> impl IntoView {
             </div>
             <ul tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                <li><a href="/">Home</a></li>
-                <li><a href="/markdown">Projects</a></li>
-                <li><a href="/resources">Resources</a></li>
+                <li><A href="/">Home</A></li>
+                <li><A href="/markdown">Projects</A></li>
+                <li><A href="/resources">Resources</A></li>
             </ul>
         </div>
       }

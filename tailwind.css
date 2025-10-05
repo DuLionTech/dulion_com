@@ -19,3 +19,8 @@
         }
     }
 }
+@layer components {
+    a[aria-current="page"] {
+        @apply text-primary;
+    }
+}
