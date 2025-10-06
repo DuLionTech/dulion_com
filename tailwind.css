@@ -55,13 +55,18 @@
     a[aria-current="page"] {
         @apply text-primary;
     }
-    div.article h1 {
-        @apply card-title;
-    }
-    div.article ul {
-        @apply list-disc pl-5;
-    }
-    div.article p {
-        @apply pt-3;
+    div.article {
+        h1 {
+            @apply card-title;
+        }
+        ul {
+            @apply list-disc pl-5;
+        }
+        p {
+            @apply pt-3 text-base;
+        }
+        a {
+            @apply text-primary;
+        }
     }
 }

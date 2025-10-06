@@ -19,7 +19,7 @@ But first, here is how I build the initial version.
 - 1 x [12v to 19v 5A 95W DC Boost Coverter](https://www.amazon.com/dp/B0B7481QCY)
 - 1 x [14" 4K UHD IPS 3840x1100 Stretched Bar Touch Screen Monitor](https://www.amazon.com/dp/B0BXL1NXVS)
 - 1 x [Cat6e Ethernet Internet Cable - 100 FT](https://www.amazon.com/dp/B0BG3BZ9VT)
-- x x [Mini PC with Intel 12 Gen Core i3-1220P](https://www.amazon.com/Beelink-SEI12-Generation-Processors-i5-1235U)
+- 1 x [Mini PC with Intel 12 Gen Core i3-1220P](https://www.amazon.com/Beelink-SEI12-Generation-Processors-i5-1235U)
 
 The mini PC shown above is not the one I used on our RV trip. If I didn't already have a mini PC lying around, this is
 one I would have considered purchasing. Hardware support for H.265/HVEC and AVI is ideal for decoding the video streams
