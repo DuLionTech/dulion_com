@@ -12,7 +12,7 @@ pub fn Article() -> impl IntoView {
         },
     );
     view! {
-        <div class="card card-border bg-base-100 w-7xl shadow-lg">
+        <div class="card card-border bg-base-100 max-w-7xl shadow-lg mx-4">
             <div class="card-body article">
                 <Transition fallback=move || view! { <p>"Loading..."</p> }>
                     <Show when=move || {

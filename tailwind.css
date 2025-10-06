@@ -34,6 +34,13 @@
         font-style: normal; /* Define style if applicable */
         font-display: swap; /* Optional: improve font loading experience */
     }
+    @font-face {
+        font-family: 'roboto'; /* Choose a descriptive name */
+        src: url('/fonts/roboto-regular.ttf') format('truetype');
+        font-weight: normal; /* Define weight if applicable */
+        font-style: normal; /* Define style if applicable */
+        font-display: swap; /* Optional: improve font loading experience */
+    }
 }
 
 @layer utilities {
@@ -69,4 +76,8 @@
             @apply text-primary;
         }
     }
+}
+
+@theme {
+    --font-sans: roboto, ui-sans-serif, system-ui, sans-serif;
 }

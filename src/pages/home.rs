@@ -70,29 +70,26 @@ pub fn Home() -> impl IntoView {
                     </figure>
                     <div class="card-body text-base w-2/3">
                         <h2 class="card-title">"Woodworking"</h2>
-                        <p>"Woodworking has become a deeply cherished creative outlet, offering a \
-                        satisfying blend of meticulous craftsmanship and artistic expression. Over \
-                        the years, I've cultivated a robust collection of woodworking equipment, \
-                        meticulously acquired to outfit a fully functional small shop. This \
-                        includes a comprehensive range of tools, from precision saws and robust \
-                        planers to versatile routers and an assortment of hand tools, all carefully \
-                        maintained and ready for use."</p>
-                        <p>"My journey in woodworking has naturally intersected with my growing \
-                        expertise in electronics. This fusion has opened up exciting new avenues \
-                        for innovation and personalization in my projects. A prime example of this \
-                        integration can be seen in the custom birdhouses I've crafted for family \
-                        members. These aren't just ordinary birdhouses; each one thoughtfully \
-                        incorporates a miniature Wi-Fi camera, allowing for real-time observation \
-                        of nesting birds from a smartphone or computer. This blend of natural \
-                        beauty and modern technology brings a unique dimension to backyard wildlife \
-                        appreciation."</p>
-                        <p>"Beyond the practical applications, I'm actively exploring the aesthetic \
-                        potential of integrating electronics into my woodworking designs. For \
-                        example, I'm exploring the incorporation of addressable LED lights. Imagine \
-                        custom-built shelves with integrated lighting that can change color and \
-                        pattern, or a handcrafted piece of furniture that subtly illuminates to \
-                        create a dynamic ambiance. The possibilities for adding an interactive and \
-                        visually striking element to my wooden creations are truly captivating."</p>
+                        <p>"Woodworking has long been a deeply cherished creative outlet outside \
+                        of work, offering a satisfying blend of meticulous craftsmanship and \
+                        artistic expression. Over the years, I've accumulated a robust collection \
+                        of woodworking equipment, enough to outfit a fully functional small shop. \
+                        This includes a range of tools, from a professional table saw, thickness \
+                        planer, jointer, and drill press, to various routers and an assortment of \
+                        hand tools, all carefully maintained and ready for use."</p>
+                        <p>"My journey in woodworking has naturally intersected with my exploration \
+                        into electronics. This fusion has opened up exciting avenues for innovation \
+                        and personalization in my projects. An example of this integration can be \
+                        seen in the custom birdhouses I've crafted for family members. These aren't \
+                        just ordinary birdhouses; each one thoughtfully incorporates a miniature \
+                        Wi-Fi camera, allowing for real-time remote observation of nesting birds."</p>
+                        <p>"Beyond the practical applications, I'm also exploring the aesthetic \
+                        potential of combining electronics into my woodworking designs. For example, \
+                        I'm working towards incorporating addressable LED lights into my projects. \
+                        Imagine a custom-built wooden lamp or wall clock framed in cherry or walnut \
+                        illuminated with integrated color-changing LEDs to create a dynamic \
+                        ambiance. The possibilities for adding an interactive and visually striking \
+                        element to my wooden creations are truly captivating."</p>
                     </div>
                 </div>
             </div>
