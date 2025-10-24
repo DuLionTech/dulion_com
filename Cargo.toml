@@ -7,17 +7,19 @@ authors = ["Phillip DuLion <phillip@dulion.com>"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+console_error_panic_hook = "0.1"
+console_log = "1"
+gloo-net = { version = "0.6.0", features = ["http"] }
 leptos = { version = "0.8", features = ["csr"] }
 leptos_meta = { version = "0.8" }
 leptos_router = { version = "0.8" }
-console_log = "1"
 log = "0.4"
-console_error_panic_hook = "0.1"
-serde = { version = "1.0.228", features = ["derive"] }
-send_wrapper = "0.6.0"
-gloo-net = { version = "0.6.0", features = ["http"] }
-web-sys = { version = "0.3", features = ["AbortController", "AbortSignal"] }
 markdown = "1.0.0"
+send_wrapper = "0.6.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_yaml = "0.9.34-deprecated"
+thiserror = "2.0.17"
+web-sys = { version = "0.3", features = ["AbortController", "AbortSignal"] }
 
 # utils
 # strum = { version = "0.25", features = ["derive", "strum_macros"] }
