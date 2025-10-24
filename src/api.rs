@@ -13,7 +13,7 @@ pub enum ApiError {
 
 #[derive(Debug, Deserialize, Clone)]
 pub struct SectionIndex {
-    pub index: Vec<SectionLink>,
+    pub links: Vec<SectionLink>,
 }
 
 #[derive(Debug, Deserialize, Clone)]
@@ -22,7 +22,7 @@ pub struct SectionLink {
     pub href: String,
 }
 
-pub async fn fetch_index(section: &'static str) -> Result<SectionIndex, Error> {
+pub async fn fetch_section(section: &'static str) -> Result<SectionIndex, Error> {
     let path = format!("/markdown/{}.yaml", section);
     let text = fetch_text(&path).await?;
     let result = serde_yaml::from_str::<SectionIndex>(&text)?;

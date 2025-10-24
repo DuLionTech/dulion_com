@@ -1,4 +1,4 @@
-index:
+links:
 - title: ESP32 IDF C & Rust
   href: esp32.md
 - title: Rust
