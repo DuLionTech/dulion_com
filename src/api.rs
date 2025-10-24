@@ -31,7 +31,6 @@ pub async fn fetch_index(section: &'static str) -> Result<SectionIndex, Error> {
 
 pub async fn fetch_markdown(section: &'static str, article: String) -> Result<String, Error> {
     let path = format!("/markdown/{}/{}", section, article);
-    log::info!("Fetching {}", path);
     let text = fetch_text(&path).await?;
     Ok(markdown::to_html(&text))
 }

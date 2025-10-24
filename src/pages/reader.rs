@@ -35,7 +35,7 @@ fn Reader(section: &'static str) -> impl IntoView {
         }>
           <div class="drawer lg:drawer-open">
             <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content mx-auto flex flex-wrap justify-center items-center gap-4 items-start">
+            <div class="drawer-content w-full flex flex-wrap items-start">
               <Outlet />
             </div>
             <IndexDrawer section />

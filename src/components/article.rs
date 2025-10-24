@@ -44,8 +44,8 @@ fn Article(section: &'static str) -> impl IntoView {
     };
 
     view! {
-        <div class="card card-border bg-base-100 max-w-7xl shadow-lg mx-4">
-            <div class="card-body article">
+        <div class="card card-border bg-base-100 shadow-lg mx-auto">
+            <div class="card-body article w-full max-w-7xl">
                 <Transition fallback=move || view! { <p>"Loading..."</p> }>
                     <ErrorBoundary fallback>
                         { move || Suspend::new(async move {
