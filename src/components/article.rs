@@ -1,6 +1,7 @@
 use crate::api::fetch_markdown;
 use leptos::prelude::*;
 use leptos_router::hooks::use_params_map;
+use crate::components::errors::errors;
 
 #[component]
 pub fn ProjectArticle() -> impl IntoView {
@@ -26,28 +27,11 @@ fn Article(section: &'static str) -> impl IntoView {
             .unwrap_or_else(|| "title.md".to_string());
         fetch_markdown(section, article).await
     });
-    let fallback = move |errors: ArcRwSignal<Errors>| {
-        let error_list = move || {
-            errors.with(|errors| {
-                errors
-                    .iter()
-                    .map(|(_, e)| view! { <li>{e.to_string()}</li> })
-                    .collect::<Vec<_>>()
-            })
-        };
-        view! {
-            <div class="error">
-                <h2>"Error"</h2>
-                <ul>{error_list}</ul>
-            </div>
-        }
-    };
-
     view! {
         <div class="card card-border bg-base-100 shadow-lg mx-auto">
             <div class="card-body article w-full max-w-7xl">
-                <Transition fallback=move || view! { <div><h1>"Loading..."</h1></div> }>
-                    <ErrorBoundary fallback>
+                <Transition fallback=loading>
+                    <ErrorBoundary fallback=errors>
                         { move || Suspend::new(async move {
                             article.await.map(|article| view! {
                                 <div inner_html=article />
@@ -58,4 +42,8 @@ fn Article(section: &'static str) -> impl IntoView {
             </div>
         </div>
     }
+}
+
+fn loading() -> impl IntoView {
+    view! { <div><h1>"Loading..."</h1></div> }
 }
